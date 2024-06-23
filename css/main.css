@@ -1,0 +1,409 @@
+body {
+    background-color: #3c3c3c;
+}
+
+a, h1, h2, h3, h4, h5, p {
+    color: #fff;
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, p {
+    cursor: default;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #3c3c3c;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 200;
+    margin: .1em 0;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 200;
+    margin: .1em 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #e1b382;
+    z-index: 1;
+}
+
+.menu-btn {
+    position: fixed;
+    width: 5em;
+    height: 5em;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-btn-bar {
+    width: 35px;
+    height: 4px;
+    background-color: #fff;
+}
+
+.menu-btn-bar:nth-child(2) {
+    margin: .5em 0;
+}
+
+.menu-btn-cls {
+    font-size: 4rem;
+    color: #fff;
+    margin: -10px 0 0 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-btn-cls:hover {
+    color: #3c3c3c;
+}
+
+nav {
+    height: 100vh;
+    display: none;
+    align-items: center;
+    padding: 0 0 0 2em;
+    border-bottom: 1px solid white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    flex: 1;
+}
+
+li a {
+    font-size: 1.5rem;
+    padding: 1em 0;
+    display: inline-block;
+    width: 10em;
+}
+
+.active-link {
+    pointer-events: none;
+    color: #3c3c3c;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 0 0;
+}
+
+.index-img {
+    margin: 2.5em 0 0;
+    max-width: 100%;
+}
+
+.img-source {
+    font-size: .6rem;
+    font-weight: 200;
+    width: 54em;
+    margin: .5em 0 1.5em;
+    max-width: 90%;
+    text-align: end;
+}
+
+.index-lnks {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0 0;
+}
+
+.index-lnk-btn {
+    width: 12em;
+    height: 3em;
+    border: 1px solid white;
+    margin: 1em;
+}
+
+.index-lnk-btn a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-lnk-btn a:hover {
+    background-color: white;
+    color: #3c3c3c
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 1.5em 0;
+}
+
+footer p {
+    font-weight: 300;
+}
+
+footer a {
+    cursor: pointer;
+}
+
+
+/**************************/
+/***** PROJECT STYLES *****/
+/**************************/
+
+.project-cntnr {
+    padding: 2em 0;
+    width: 35em;
+    max-width: 90%;
+}
+
+.project-cntnr h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.project-cntnr h3 {
+    font-weight: 200;
+    font-size: 1rem;
+    margin: .1em 0;
+}
+
+.project-cntnr img {
+    margin: 1em 0;
+    width: 100%;
+}
+
+.project-video {
+    margin: 1em 0;
+    width: 100%;
+    height: auto;
+}
+
+
+/***************************/
+/***** CONCERTS STYLES *****/
+/***************************/
+
+.upcoming-cntnr {
+    display: flex;
+    width: 95%;
+    padding: 5em 0;
+    flex-direction: column;
+}
+
+.upcoming-col {
+    padding: .25em 1.5em .5em 0;
+    width: 10em;
+}
+
+.upcoming-col h4 {
+    font-size: 2rem;
+    position: sticky;
+    top: 1em;
+}
+
+.upcoming-cntnr .concerts-col p {
+    font-size: 1rem;
+}
+
+.concerts-cntnr {
+    display: flex;
+    width: 95%;
+    padding: 2.5em 0;
+}
+
+.year-col {
+    padding: .5em 0 .5em 0;
+    width: 5em;
+}
+
+.year-col h4 {
+    font-size: 1.5rem;
+    position: sticky;
+    top: 1em;
+}
+
+.concerts-col {
+    flex: 1;
+}
+
+.concerts-col p {
+    font-size: .8rem;
+    padding: 1em 0;
+}
+
+.concerts-col p:first-child {
+    margin: .25em 0 0;
+}
+
+.concerts-col a {
+    color:#e1b382;
+}
+
+.concerts-col a:hover {
+    text-decoration: underline;
+}
+
+
+/************************/
+/***** ABOUT STYLES *****/
+/************************/
+
+.about-cntnr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-cntnr img {
+    width: 28em;
+    max-width: 100%;
+    margin: 1em 0 0;
+}
+
+.about-cntnr .img-source {
+    width: 46.5em;
+    max-width: 90%;
+}
+
+.about-cntnr p {
+    margin: 1em 0;
+    width: 90%;
+    line-height: 1.5;
+}
+
+
+
+@media only screen and (min-width:768px) {
+    a:hover {
+        color: #e1b382;
+    }
+
+    header {
+        padding: 2.5em 0;
+        width: initial;
+        position: initial;
+        justify-content: center;
+        background-color: #3c3c3c;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        height: initial;
+        padding: 0;
+    }
+
+    ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    li a {
+        font-size: 1rem;
+        padding: 1em 2em;
+        width: initial;
+    }
+
+    .active-link {
+        color: #e1b382;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    .index-lnks {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .project-cntnr:nth-child(odd) {
+        margin-left: -5%;
+    }
+    
+    .project-cntnr:nth-child(even) {
+        margin-left: 5%;
+    }
+
+    .upcoming-cntnr {
+        flex-direction: row; 
+    }
+
+    .upcoming-col {
+        padding: .25em 1.5em .5em .5em;
+    }
+
+    .year-col {
+        padding: .5em 2em .5em 5em;
+        width: 5em;
+    }
+
+    .year-col h4 {
+        font-size: 2rem;
+    }
+
+    .concerts-col p {
+        font-size: 1rem;
+        padding: .5em 0;
+    }
+
+    .about-cntnr p {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width:1600px) {
+    :root {
+        font-size: 24px
+    }
+}
+
+@media only screen and (min-width:2000px) {
+    :root {
+        font-size: 28px
+    }
+}
+
+@media only screen and (min-width:2400px) {
+    :root {
+        font-size: 32px
+    }
+}
